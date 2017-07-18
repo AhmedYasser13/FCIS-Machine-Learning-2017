@@ -17,10 +17,11 @@ print(y)
 x=input()
 y=len(x)
 y-=1
-for i in range(round(len(x)/2)):
-    if not x[i] == x[y]:
+for i in range((len(x)//2)):
+    if not x[i] == x[y-i]:
         print("false")
+        y=-5
         break
-    y-=1
-if y+i == len(x)-2:
-    print ("true")
+if not y==-5:
+  print("true")
+    
